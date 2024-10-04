@@ -39,7 +39,7 @@ public class TestDataRunner implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args){
         //테스트 User 생성
-        User testUser = new User("Robbie", passwordEncoder.encode("1234"), "robbie@naver.com", UserRoleEnum.USER);
+        User testUser = new User("Robbie2", passwordEncoder.encode("1234"), "robbie2@naver.com", UserRoleEnum.USER);
         testUser = userRepository.save(testUser);
 
         //테스트 User의 관심상품 등록
